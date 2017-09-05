@@ -28,8 +28,10 @@ body {
 .navbar *{
     border-radius: 0 !important;
     margin-bottom: 0 !important;
+}
 
-    margin-top: 5px;
+.navbar-static-top{
+    margin-bottom: 0 !important;
 }
 
 .img-portfolio {
@@ -52,6 +54,7 @@ body {
 
 header.carousel {
     /*height: 50%;*/
+    margin-top: 0;
 }
 
 /* --- Header slider --- */
@@ -68,8 +71,8 @@ header.carousel {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    margin-bottom: 30px;
-    
+    margin-bottom: 10px;
+
     padding-top: 0 !important;
 
 }
@@ -78,6 +81,7 @@ header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     height: 100%;
+    margin-top: 0;
 }
 
 header.carousel .fill {
@@ -139,16 +143,53 @@ footer {
 
 .panel > .panel-heading{
     background-color: #DA1B41;
-    color: #F9F7E1;
+    color: #ffffff;
 }
 
 /*typed.js*/
 .typed-cursor{
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
+
+  font-size: 150%;
 }
 @-webkit-keyframes blink{
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
 }
+
+.cs{
+    background: #1C58A6;
+}
+
+.cs-top{
+
+}
+
+.cs *{
+    color: white;
+
+}
+
+.btn-primary{
+    background: #1C58A6;
+}
+
+.btn-primary:hover{
+    background: #DA1B41;
+    border-color: #DA1B41;
+}
+
+.over-text{
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    left: 0; /*center text inside canvas*/
+    right: 0;
+
+
+}
+
+
+/**/

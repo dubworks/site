@@ -26,6 +26,14 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!--Constellation-->
+    <script type="text/javascript" src="js/Stats.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+
+    </script>
+    <script src="https://github.com/thenextweb/constellation/releases/download/v1.5.5/constellation.min.js"></script>
+
+
 </head>
 
 <body>
@@ -41,22 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Dub Works</a>
+                <a class="navbar-brand" href="#">Dub Works</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="cal.html">Events</a>
                     </li>
                     <li>
-                        <a href="services.html">Events</a>
+                        <a href= "mailto:sebohood@gmail.com?Subject=Hello%20Dub%20Works!">Contact</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Members</a>
+                        <a href="#friends">Members</a>
                     </li>
                 </ul>
             </div>
@@ -67,25 +72,19 @@
 
 
     <!-- image header-->
-
-        <div id="header-wrapper" class="header-slider">
-            <header class="clearfix">
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                        <br />
-                        <br />
-                        <div class="d-flex justify-content-center">
-                            <h1 class="h-monster h-thin highlight">
-                                Student run <span id="typed"> </span>
-                                <span id="typed-cursor"></span>
-                            </h1>
-                        </div>
-                    </div>
+        <div class="cs" align="center">
+                <!--<h1 class="over-text">
+                     <span id="typed"> </span>
+                    <span id="typed-cursor"></span>
+                </h1>-->
+                <div class="over-text" align="center">
+                    <h1>Student run incubation</h1>
+                    <h3>Make connections that matter</h3>
                 </div>
-            </div>
-            </header>
-    </div>
+
+        <canvas id="myCanvas"></canvas>
+        </div>
+        <br><br>
 
 
     <!-- Page Content -->
@@ -100,7 +99,7 @@
                             <h4><i class="fa fa-fw fa-handshake-o"></i> Collaboration</h4>
                         </div>
                         <div class="panel-body">
-                            <p>We're a group of students who work together and support each other.  We help find finds students can contribute and stuff. Another sentence to make it long enough.</p>
+                            <p>Interact with students from across GWU, and find the teammates needed to take a project to the next level.</p>
                             <!--<a href="#" class="btn btn-default">Learn More</a>-->
                         </div>
                     </div>
@@ -111,18 +110,18 @@
                             <h4><i class="fa fa-fw fa-connectdevelop"></i> Mentorship</h4>
                         </div>
                         <div class="panel-body">
-                            <p>With the support of the Mentors in Residence program, our own networks, and other GW resources we have the best mentors that have done things.  Now they help us do things.</p>
-
+                            <p>Gain insights and grow, with the help of a world class network of mentors, professors, and alumni with experience to spare.</p>
+                            <!--With the support of the Mentors in Residence program, our own networks, and other GW resources we have the best mentors that have done things.  Now they help us do things.-->
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-soundcloud"></i> Support</h4>
+                            <h4><i class="fa fa-fw fa-diamond"></i> Resources</h4>
                         </div>
                         <div class="panel-body">
-                            <p>We're all still learning.  Workshops and space are good things. We have those. Let's do a demo day too. What's a good icon for this section? Another sentence to make it the same hieght.</p>
+                            <p>Access expert-led workshops, talks, co-working space, funding opportunities, and more in our refurbished machine shop.</p>
 
                         </div>
                     </div>
@@ -131,86 +130,120 @@
         </div>
         <!-- /.row -->
 
+
         <!-- Portfolio Section -->
+        <!-- Example
+
+        <div class="col-md-4 col-sm-6">
+            <p>Company Name</p>
+            <a href="website link">
+                <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/company.png" alt="">
+            </a>
+        </div>
+
+        End example.-->
+
+
         <div class="container">
             <div class="row">
-                <div class="span10 offset2">
-                    <h2 class="page-header">Community Members </h2>
+                <div class="col-10 offset2">
+                    <h2 id="friends">Our friends </h2>
+                    <hr>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <a href="http://fourthwavestudios.com">
-                        <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/4ws.png" alt="">
+                    <p>Agnes</p>
+                    <a href="https://www.agnes.io/">
+                        <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/agnes.png" alt="">
                     </a>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
+                    <p>Berg Bites</p>
                     <a href="http://bergbites.com">
                         <img class="img-responsive img-portfolio img-hover" src="http://bergbites.com/wp-content/uploads/2017/01/Berg_Bites_Package_Sunflower_White_Chocolate-650x646.png" alt="">
                     </a>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/beee.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
+                    <p>Drwr</p>
                     <a href="http://rowlandz.com/drwr-static/index.html">
                         <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/drwr.png" alt="">
                     </a>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
+                    <p>Fourth Wave</p>
+                    <a href="http://fourthwavestudios.com">
+                        <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/4ws.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <p>Give Butter</p>
+                    <a href="https://givebutter.com/story">
+                        <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/givebutter.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <p>Hackital</p>
                     <a href="http://hackital.io">
                         <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/hackital.png" alt="">
                     </a>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/250x250" alt="">
+                    <p>Launch Pad</p>
+                    <a href="https://www.facebook.com/LaunchPadGW/">
+                        <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/launchpad.png" alt="">
                     </a>
                 </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <p>Office of Innovation &amp Entrepreneurship</p>
+                    <a href="website link">
+                        <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/entrepreneurship.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <p>Represently</p>
+                    <a href="https://represently.com/">
+                        <img class="img-responsive img-portfolio img-hover" src="img/portfolio-items/represently.png" alt="">
+                    </a>
+                </div>
+
             </div>
         </div>
         <!-- /.row -->
+
         <div class="container">
             <div class="row">
-                <div class="span3 offset6">
-                    <a href="portfolio.html" class="btn btn-default">See all</a>
+                <div class="s.col-md-3 .offset-md-3">
+                    <a href="" class="btn btn-primary">Apply to Join</a>
                 </div>
             </div>
         </div>
         <!-- /.row-->
 
-            <!-- Features Section -->
+
+
+        <hr>
+        <br>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header"> An Entrepreneur Community</h2>
-                </div>
-                <div class="col-md-6">
-                    <p><strong>Dub Works is more than just a space, it's people.</strong></p>
-                    <p>
-                        We have ideas. We build things.  We do New Venture because we want some easy money. Come to Hackital.
-                    </p>
-                    <ul>
-                          <li>Workshops</li>
-                          <li>Tech and Tells</li>
-                          <li>Hackathons</li>
-                          <li>Milk and Cookies</li>
-                    </ul>
+                <h3>See what's going on in our student incubator.</h3>
+                <a href="cal.html" class="btn btn-primary">Events</a>
+                or
+                <a href="https://join.slack.com/t/dubworks/signup" class="btn btn-primary"><i class="fa fa-fw fa-slack"></i> Join us on Slack</a>
 
-                    <!-- Next event posted here-->
-                    <p><strong>Upcoming Events</strong></p>
-                    <p>Next event link.</p>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-responsive" src="/img/thinkful-workshop.jpg" alt="">
-                </div>
             </div>
         </div>
-            <!-- /.row -->
-
+        <br>
         <hr>
 
         <!-- Call to Action Section -->
+        <!--
         <div class="container">
             <div class="well">
                 <div class="row">
@@ -223,7 +256,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr>-->
 
         <!-- Footer -->
         <div class="container">
@@ -237,21 +270,17 @@
     </div>
     <!-- /.container -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
     <!-- jQuery -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
     <!-- typed -->
     <script src="js/typed.js"></script>
     <!-- typer-->
     <script src="js/typer.js"></script>
 
-    <!-- Script to Activate the Carousel
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>-->
+    <script src="js/constellations.js"></script>
 
 </body>
 

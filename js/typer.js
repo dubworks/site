@@ -2,7 +2,7 @@
 
 $(function(){
     $("#typed").typed({
-      strings: ["coworking space", "workshops", "innovation", "collaboration", "incubation"],
+      strings: ["Student run coworking space", "Student run workshops", "Student run innovation", "Student run collaboration", "Student run incubation"],
       typeSpeed: 0,
       backDelay: 1000,
       loop: false,
